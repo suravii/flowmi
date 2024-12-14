@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# 🌐 FlowMi - Smart Traffic and Commute Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlowMi is your ultimate traffic companion, designed to make your daily commute smarter and more efficient. With real-time traffic updates, personalized task scheduling, and alternate route suggestions, FlowMi ensures that you’re always one step ahead on the road.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Real-Time Traffic Analysis**: Stay updated with live traffic conditions using data collected from CCTV cameras.
+- **Smart Route Suggestions**: Get alternative routes to save time and avoid congestion.
+- **Task Scheduling**: Set and track tasks before your trip with customized reminders.
+- **Comprehensive Traffic Data**: Future-ready with plans to integrate 3D mapping for public transport.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Technology Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**: Flutter 
+- **Backend**: Flutter 
+- **Database**: MongoDB
+- **Traffic Data Source**: CCTV and future integration with 3D mapping.
+- **APIs**: Google map api. 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🎯 Vision
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+FlowMi aims to revolutionize traffic management in Kathmandu and beyond by:
+
+- Reducing commute stress for users with real-time solutions.
+- Offering a viable alternative to traditional maps like Google Maps.
+- Enhancing public transport efficiency and planning.
+
+---
+
+## 📈 Roadmap
+
+### Phase 1: Core Functionality
+- [x] Real-time traffic data visualization.
+- [x] Task scheduling and reminders.
+- [x] Alternate route suggestions.
+
+### Phase 2: Public Transport Optimization
+- [ ] Integration with public transport data.
+- [ ] User-friendly recommendations for bus/microbus routes.
+
+### Phase 3: Advanced Features
+- [ ] 3D mapping for public transport services.
+- [ ] AI-based traffic pattern predictions.
+
+---
+
+## 📷 Preview
+
+*Screenshots coming soon...*
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! If you’d like to help:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m "Add your feature"`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a Pull Request.
+
+---
+
+
+
+## 🌟 Show Your Support
+
+If you like FlowMi, don’t forget to ⭐ this repository and share it with your friends. Together, let’s make commutes hassle-free! 🚗💨
