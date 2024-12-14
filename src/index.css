@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+ 
+
+  /* button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+   
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  button:hover {
+    border-color: #646cff;
+  } */
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  @layer base {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    
+  }
+}
+
+.anav {
+ 
+  text-decoration: none;
+  padding-bottom: 10px;
+  position: relative;
+}
+.anav:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.anav:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
